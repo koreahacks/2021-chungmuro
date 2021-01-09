@@ -1,6 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="187.8dp"
+        android:layout_height="16.5dp"
+        android:text="아이디, 비밀번호를 입력하세요."
+        android:fontFamily="@font/kopubdotummedium"
+        android:textColor="#5c5c5c"
+        android:textSize="15sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="105dp"
+        android:lineSpacingExtra="1.5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="140.5dp"
+        android:background="@drawable/editbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kopubdotummedium"
+        android:background="@null"
+        android:hint="ID"
+        android:textColor="#b4b4b4"
+        android:textSize="13.8sp"
+        android:layout_marginStart="34.5dp"
+        android:layout_marginLeft="34.5dp"
+        android:layout_marginTop="157.8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/idcheckBtn"
+        android:layout_width="70.3dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="261.8dp"
+        android:layout_marginLeft="261.8dp"
+        android:layout_marginTop="146.8dp"
+        android:background="@drawable/checkbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="205dp"
+        android:background="@drawable/editbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fontFamily="@font/kopubdotummedium"
+        android:hint="PWD"
+        android:textColor="#b4b4b4"
+        android:textSize="13.8sp"
+        android:layout_marginStart="34.5dp"
+        android:layout_marginLeft="34.5dp"
+        android:layout_marginTop="222.3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="269.5dp"
+        android:background="@drawable/editbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/repw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fontFamily="@font/kopubdotummedium"
+        android:hint="Confirm PWD"
+        android:textColor="#b4b4b4"
+        android:textSize="13.8sp"
+        android:layout_marginStart="34.5dp"
+        android:layout_marginLeft="34.5dp"
+        android:layout_marginTop="286.8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="112.8dp"
+        android:layout_height="16.8dp"
+        android:text="성별을 선택하세요."
+        android:fontFamily="@font/kopubdotummedium"
+        android:textColor="#5c5c5c"
+        android:textSize="13.8sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="379dp"
+        android:lineSpacingExtra="1.5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/FemaleBtn"
+        android:layout_width="157dp"
+        android:layout_height="49.5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="414.5dp"
+        android:background="@drawable/female_nonselect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/MaleBtn"
+        android:layout_width="157dp"
+        android:layout_height="49.5dp"
+        android:layout_marginStart="187dp"
+        android:layout_marginLeft="187dp"
+        android:layout_marginTop="414.5dp"
+        android:background="@drawable/male_nonselect"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/nextBtn"
+        android:layout_width="328dp"
+        android:layout_height="49.5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="617dp"
+        android:background="@drawable/nextbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
