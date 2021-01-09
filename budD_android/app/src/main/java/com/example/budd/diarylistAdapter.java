@@ -47,7 +47,7 @@ public class diarylistAdapter extends PagerAdapter {
                 @Override
                 public void onClick(View v) {
 
-                    Intent intent = new Intent(mContext, MainActivity.class);
+                    Intent intent = new Intent(mContext, ReadActivity.class);
                     mContext.startActivity(intent);
                 }
             });

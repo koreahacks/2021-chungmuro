@@ -15,6 +15,7 @@
         <activity android:name=".NewPage_selectCover" />
         <activity android:name=".NewPage_selectInter" />
         <activity android:name=".Page_view"></activity>
+        <activity android:name=".ReadActivity"></activity>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
