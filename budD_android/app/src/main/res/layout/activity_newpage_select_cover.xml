@@ -17,8 +17,8 @@
         android:textColor="#5c5c5c"
         android:layout_marginTop="26dp"
         android:lineSpacingExtra="1.5sp"
+        android:fontFamily="@font/kopubdotumbold"
         tools:text="표지를 선택해주세요." />
-<!--    android:fontFamily="@font/ko_pub_dotum"-->
     
     <Button
         android:layout_width="368dp"
@@ -35,5 +35,6 @@
         android:textStyle="bold"
         android:textSize="15sp"
         android:textColor="#ffffff"
+        android:fontFamily="@font/kopubdotumbold"
         android:background="@drawable/long_btn" />
 </LinearLayout>

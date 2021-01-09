@@ -17,6 +17,7 @@
         android:textColor="#5c5c5c"
         android:lineSpacingExtra="1.5sp"
         tools:text="상대방의 관심분야를 선택하세요."
+        android:fontFamily="@font/kopubdotumbold"
         android:layout_marginTop="26dp" />
     <TextView
         android:layout_width="wrap_content"
@@ -26,8 +27,8 @@
         android:textColor="#7f7f7f"
         android:lineSpacingExtra="1.5sp"
         android:layout_marginTop="7dp"
+        android:fontFamily="@font/kopubdotummedium"
         tools:text="선택한 관심분야를 가진 이와 일기를 쓸 수 있습니다." />
-    <!--        android:fontFamily="@font/ko_pub_dotum"-->
 
 
     <GridLayout
@@ -121,6 +122,7 @@
         android:textColor="#5c5c5c"
         android:lineSpacingExtra="1.5sp"
         android:layout_marginTop="68dp"
+        android:fontFamily="@font/kopubdotumbold"
         tools:text="상대방의 성별을 선택하세요." />
 
     <LinearLayout
@@ -150,10 +152,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="49.5dp"
-        android:layout_marginTop="160.2dp"
         android:text="다음"
+        android:layout_gravity="bottom"
         android:textStyle="bold"
         android:textSize="15sp"
         android:textColor="#ffffff"
+        android:layout_marginTop="145dp"
+        android:fontFamily="@font/kopubdotumbold"
         android:background="@drawable/long_btn" />
 </LinearLayout>
