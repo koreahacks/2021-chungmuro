@@ -27,8 +27,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/userid"
-        android:layout_width="wrap_content"
+        android:id="@+id/editUserid"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/kopubdotummedium"
         android:background="@null"
@@ -53,8 +53,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/userpw"
-        android:layout_width="wrap_content"
+        android:id="@+id/editUserpw"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:background="@null"
         android:fontFamily="@font/kopubdotummedium"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
+    <Button
         android:id="@+id/loginBtn"
         android:layout_width="328dp"
         android:layout_height="49.5dp"

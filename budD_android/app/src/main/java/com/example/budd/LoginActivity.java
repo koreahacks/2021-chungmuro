@@ -6,11 +6,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
+import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
+    EditText editUserid, editUserpw;
     ImageButton login;
+    TextView register;
+
+    static public String userID = "test111";
+    static public String userPWD = "test";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,24 +29,28 @@ public class LoginActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        login = (ImageButton) findViewById(R.id.loginBtn);
+        login = findViewById(R.id.loginBtn);
+        editUserid = findViewById(R.id.editUserid);
+        editUserpw = findViewById(R.id.editUserpw);
+        register = (TextView) findViewById(R.id.register);
 
-        login.setOnClickListener(new View.OnClickListener() {
+        register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, SearchActivity.class);
-                startActivity(intent);
 
+                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                startActivity(intent);
             }
         });
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
-                finish();
+                if (editUserid.getText().toString().equals(userID) && editUserpw.getText().toString().equals(userPWD)) {
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(intent); //액티비티 띄우기
+                } else
+                    Toast.makeText(getApplicationContext(), "아이디나 패스워드가 틀립니다.", Toast.LENGTH_SHORT).show();
             }
         });
     }
