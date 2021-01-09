@@ -1,9 +1,11 @@
 package com.example.budd;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -101,6 +103,33 @@ public class SearchActivity extends AppCompatActivity {
         //검색버튼 눌렀을 때 이벤트 제어
         if(id == R.id.action_search){
             //검색했을 때 쿼리 구현
+
+            return true;
+        }
+
+        if(id == R.id.action_break){
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+            builder.setTitle("절교").setMessage("정말 절교하시겠습니다?\n지금까지 나눠 온 교환일기가 사라집니다.\n복구가 불가능합니다.");
+
+            builder.setPositiveButton("예", new DialogInterface.OnClickListener(){
+                @Override
+                public void onClick(DialogInterface dialog, int id)
+                {
+                    Toast.makeText(getApplicationContext(), "OK Click", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            builder.setNegativeButton("아니오", new DialogInterface.OnClickListener(){
+                @Override
+                public void onClick(DialogInterface dialog, int id)
+                {
+                    Toast.makeText(getApplicationContext(), "Cancel Click", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            AlertDialog alertDialog = builder.create();
+            alertDialog.show();
 
             return true;
         }
