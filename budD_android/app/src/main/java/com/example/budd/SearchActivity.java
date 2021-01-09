@@ -17,11 +17,11 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-
+/*
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.disposables.Disposable;
-import io.reactivex.rxjava3.schedulers.Schedulers;
+import io.reactivex.rxjava3.schedulers.Schedulers;*/
 
 public class SearchActivity extends AppCompatActivity {
 
@@ -107,6 +107,7 @@ public class SearchActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+/*
 
     private void http_api_cmd(String param, String body) {
         String url = "http://" + DEFINITION.FRONT_IP+ ":" + DEFINITION.FRONT_PORT + param;
@@ -117,8 +118,9 @@ public class SearchActivity extends AppCompatActivity {
         BackgroundTask(url,body);
 
     }
+*/
 
-    Disposable backgroundtask;
+   /* Disposable backgroundtask;
     String result_ack;
 
     void BackgroundTask(String url,String body) {
@@ -152,7 +154,7 @@ public class SearchActivity extends AppCompatActivity {
 
                     backgroundtask.dispose();
                 });
-    }
+    }*/
 //
 //    private class NetworkTask extends AsyncTask<Void, Void, String> {
 //
@@ -198,6 +200,7 @@ public class SearchActivity extends AppCompatActivity {
 //            }
 //        }
 //    }
+/*
 
     private String find_title_cmd_msg(String userid, String opposite_id, String title) {
         String json = "";
@@ -248,5 +251,6 @@ public class SearchActivity extends AppCompatActivity {
             return 0;
         }
     }
+*/
 
 }

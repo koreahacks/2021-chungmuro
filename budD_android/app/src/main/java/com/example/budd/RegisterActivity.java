@@ -3,8 +3,10 @@ package com.example.budd;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +15,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     ImageButton female, male, next, idcheck;
     ImageView confirm;
+    EditText userid, userpw, repw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,9 @@ public class RegisterActivity extends AppCompatActivity {
         actionBar.hide();*/
 
 
+        userid = (EditText) findViewById(R.id.userid);
+        userpw = (EditText) findViewById(R.id.userpw);
+        repw = (EditText) findViewById(R.id.repw);
         female = (ImageButton) findViewById(R.id.FemaleBtn);
         male = (ImageButton) findViewById(R.id.MaleBtn);
         idcheck = (ImageButton) findViewById(R.id.idcheckBtn);
@@ -51,10 +57,12 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                /*if()
+                if(!userid.equals("test111"))
                     confirm.setVisibility(View.VISIBLE);
-                else
-                    confirm.setVisibility(View.INVISIBLE);*/
+                else {
+                    confirm.setVisibility(View.INVISIBLE);
+                    Toast.makeText(getApplicationContext(), "중복된 아이디입니다.", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -62,8 +70,17 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getApplicationContext(), Register2Activity.class);
-                startActivity(intent);
+                if(confirm.getVisibility() == View.INVISIBLE) {
+                    Toast.makeText(getApplicationContext(), "중복된 아이디입니다.", Toast.LENGTH_SHORT).show();
+                }
+                else if(!userpw.equals(repw)) {
+                    Toast.makeText(getApplicationContext(), "비밀번호를 확인해주십시오.", Toast.LENGTH_SHORT).show();
+                }
+
+                if(confirm.getVisibility() == View.VISIBLE && userpw.equals(repw)){
+                    Intent intent = new Intent(getApplicationContext(), Register2Activity.class);
+                    startActivity(intent);
+                }
             }
         });
     }
