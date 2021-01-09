@@ -1,23 +1,23 @@
 package com.example.budd;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
+public class SettingActivity extends AppCompatActivity {
 
-public class Register2Activity extends AppCompatActivity {
-
-    ImageButton favor_travel, favor_sports, favor_movie, favor_book, favor_mbti, favor_tech, favor_marketing, favor_design, favor_career, registerbtn;
+    ImageButton favor_travel, favor_sports, favor_movie, favor_book,
+            favor_mbti, favor_tech, favor_marketing, favor_design, favor_career, modifybtn;
     int SIZE;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register2);
+        setContentView(R.layout.activity_setting);
         SIZE = 0;
         // 액션바 숨기기
         ActionBar actionBar = getSupportActionBar();
@@ -34,7 +34,10 @@ public class Register2Activity extends AppCompatActivity {
         favor_design = (ImageButton) findViewById(R.id.designBtn);
         favor_career = (ImageButton) findViewById(R.id.careerBtn);
 
-        registerbtn = (ImageButton) findViewById(R.id.modifyBtn);
+        modifybtn = (ImageButton) findViewById(R.id.modifyBtn);
+
+        favor_sports.setSelected(true);
+        favor_book.setSelected(true);
 
         favor_travel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -181,10 +184,10 @@ public class Register2Activity extends AppCompatActivity {
             }
         });
 
-        registerbtn.setOnClickListener(new View.OnClickListener() {
+        modifybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 finish();
             }

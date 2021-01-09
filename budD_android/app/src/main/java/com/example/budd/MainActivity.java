@@ -9,6 +9,7 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 /*
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Integer> imageList;
     private ArrayList<String> oppositeList;
     private static final int DP = 24;
+    ImageView settingbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +35,15 @@ public class MainActivity extends AppCompatActivity {
         actionBar.hide();
 
         this.initializeData();
-
+        settingbtn = (ImageView)findViewById(R.id.settingBtn);
+        settingbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SettingActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         ViewPager viewPager = findViewById(R.id.viewPager);
         viewPager.setClipToPadding(false);
 
