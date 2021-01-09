@@ -12,15 +12,13 @@
         <activity android:name=".Page_view"></activity>
         <activity android:name=".NewPage_write" />
         <activity android:name=".NewPage_selectCover" />
-        <activity android:name=".NewPage_selectInter">
+        <activity android:name=".NewPage_selectInter" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".LoginActivity">
-
         </activity>
     </application>
 
