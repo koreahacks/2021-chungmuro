@@ -4,9 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import java.util.ArrayList;
 /*
 
 private DrawerLayout drawerLayout;
@@ -14,6 +18,10 @@ private View drawerView;
 */
 
 public class MainActivity extends AppCompatActivity {
+
+    private ArrayList<Integer> imageList;
+    private ArrayList<String> oppositeList;
+    private static final int DP = 24;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +32,39 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
+        this.initializeData();
+
+        ViewPager viewPager = findViewById(R.id.viewPager);
+        viewPager.setClipToPadding(false);
+
+        float density = getResources().getDisplayMetrics().density;
+        int margin = (int) (DP * density);
+        viewPager.setPadding(margin, 0, margin, 0);
+        viewPager.setPageMargin(margin/2);
+
+        viewPager.setAdapter(new diarylistAdapter(this, imageList, oppositeList));
+
         /*drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawerView = (View) findViewById(R.id.drawerView);
         drawerLayout.setDrawerListener(listener);*/
+    }
+
+    public void initializeData()
+    {
+        imageList = new ArrayList();
+
+        imageList.add(R.drawable.diarycover1);
+        imageList.add(R.drawable.diarycover2);
+        imageList.add(R.drawable.diarycover3);
+        imageList.add(R.drawable.main_newpage);
+
+        oppositeList = new ArrayList();
+
+        oppositeList.add("jay_g 과의 교환 일기장");
+        oppositeList.add("tube 와의 교환 일기장");
+        oppositeList.add("kakao 와의 교환 일기장");
+        oppositeList.add("새 교환 일기 작성");
+
     }
 
     /*DrawerLayout.DrawerListener listener = new DrawerLayout.DrawerListener() {
