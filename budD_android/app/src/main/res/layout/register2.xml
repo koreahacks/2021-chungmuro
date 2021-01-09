@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register2Activity">
+
+    <TextView
+        android:layout_width="183.8dp"
+        android:layout_height="16.5dp"
+        android:text="당신의 관심분야를 선택하세요."
+        android:fontFamily="@font/kopubdotummedium"
+        android:textColor="#5c5c5c"
+        android:textSize="15sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="50dp"
+        android:lineSpacingExtra="1.5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageButton
+        android:id="@+id/travelBtn"
+        android:layout_width="103dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="85.5dp"
+        android:background="@drawable/favor_travel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/sportsBtn"
+        android:layout_width="103dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="128.5dp"
+        android:layout_marginLeft="128.5dp"
+        android:layout_marginTop="85.5dp"
+        android:background="@drawable/favor_sports"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/movieBtn"
+        android:layout_width="103dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="241dp"
+        android:layout_marginLeft="241dp"
+        android:layout_marginTop="85.5dp"
+        android:background="@drawable/favor_travel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bookBtn"
+        android:layout_width="103dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="138.8dp"
+        android:background="@drawable/favor_book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/mbtiBtn"
+        android:layout_width="103dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="128.5dp"
+        android:layout_marginLeft="128.5dp"
+        android:layout_marginTop="138.8dp"
+        android:background="@drawable/favor_mbti"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/techBtn"
+        android:layout_width="103dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="241dp"
+        android:layout_marginLeft="241dp"
+        android:layout_marginTop="138.8dp"
+        android:background="@drawable/favor_tech"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/marketingBtn"
+        android:layout_width="103dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/favor_marketing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/designBtn"
+        android:layout_width="103dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="128.5dp"
+        android:layout_marginLeft="128.5dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/favor_design"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/careerBtn"
+        android:layout_width="103dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="241dp"
+        android:layout_marginLeft="241dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/favor_career"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/registerBtn"
+        android:layout_width="328dp"
+        android:layout_height="49.5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="562dp"
+        android:background="@drawable/registerbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
