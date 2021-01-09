@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPage_selectCover"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#5c5c5c"
+        android:layout_marginTop="26dp"
+        android:lineSpacingExtra="1.5sp"
+        android:fontFamily="@font/kopubdotumbold"
+        tools:text="표지를 선택해주세요." />
+    
+    <Button
+        android:layout_width="368dp"
+        android:layout_height="426.2dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/photo_btn" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="49.5dp"
+        android:layout_marginTop="50.2dp"
+        android:text="다음"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/kopubdotumbold"
+        android:background="@drawable/long_btn" />
+</LinearLayout>
