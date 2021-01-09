@@ -47,6 +47,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <ImageView
+        android:id="@+id/confirm"
+        android:layout_width="15.3dp"
+        android:layout_height="15.3dp"
+        android:layout_marginStart="233.5dp"
+        android:layout_marginLeft="233.5dp"
+        android:layout_marginTop="157.8dp"
+        android:background="@drawable/confirm"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/idcheckBtn"
         android:layout_width="70.3dp"
@@ -131,7 +143,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="414.5dp"
-        android:background="@drawable/female_nonselect"
+        android:background="@drawable/femalebutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -142,7 +154,7 @@
         android:layout_marginStart="187dp"
         android:layout_marginLeft="187dp"
         android:layout_marginTop="414.5dp"
-        android:background="@drawable/male_nonselect"
+        android:background="@drawable/malebutton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -156,8 +168,6 @@
         android:background="@drawable/nextbtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
 
 
