@@ -14,9 +14,24 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Space
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="107.4dp" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Space
+                android:layout_width="323dp"
+                android:layout_height="107.4dp" />
+
+            <ImageView
+                android:id="@+id/settingBtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_action_settings"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
