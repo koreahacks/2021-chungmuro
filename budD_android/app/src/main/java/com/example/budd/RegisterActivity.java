@@ -19,9 +19,9 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
 
-        // 액션바 숨기기
+/*        // 액션바 숨기기
         ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+        actionBar.hide();*/
 
 
         female = (ImageButton) findViewById(R.id.FemaleBtn);
