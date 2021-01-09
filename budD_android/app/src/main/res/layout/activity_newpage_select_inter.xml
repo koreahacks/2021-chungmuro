@@ -15,21 +15,21 @@
         android:textStyle="bold"
         android:textSize="15sp"
         android:textColor="#5c5c5c"
-        android:lineSpacingExtra="1.5sp"
-        tools:text="상대방의 관심분야를 선택하세요."
+        android:text="상대방의 관심분야를 선택하세요."
         android:fontFamily="@font/kopubdotumbold"
         android:layout_marginTop="26dp" />
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="normal"
-        android:textSize="13.8sp"
-        android:textColor="#7f7f7f"
-        android:lineSpacingExtra="1.5sp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="3dp"
         android:fontFamily="@font/kopubdotummedium"
-        tools:text="선택한 관심분야를 가진 이와 일기를 쓸 수 있습니다." />
-
+        android:lineSpacingExtra="1.5sp"
+        android:textColor="#7f7f7f"
+        android:textSize="13.8sp"
+        android:textStyle="normal"
+        android:text="선택한 관심분야를 가진 이와 일기를 쓸 수 있습니다." />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -37,6 +37,7 @@
         android:columnCount="3"
         android:layout_marginTop="19dp">
         <Button
+            android:id="@+id/btnInter_travel"
             android:layout_width="103dp"
             android:layout_height="42dp"
             android:layout_marginRight="9.5dp"
@@ -45,8 +46,9 @@
             android:textStyle="bold"
             android:textSize="13.8sp"
             android:textColor="#7f7f7f"
-            android:background="@drawable/select_btn"/>
+            android:background="@xml/short_btn_select"/>
         <Button
+            android:id="@+id/btnInter_sport"
             android:layout_width="103dp"
             android:layout_height="42dp"
             android:layout_marginRight="9.5dp"
@@ -54,16 +56,18 @@
             android:textStyle="bold"
             android:textSize="13.8sp"
             android:textColor="#7f7f7f"
-            android:background="@drawable/select_btn"/>
+            android:background="@xml/short_btn_select"/>
         <Button
+            android:id="@+id/btnInter_movie"
             android:layout_width="103dp"
             android:layout_height="42dp"
             android:text="영화"
             android:textStyle="bold"
             android:textSize="13.8sp"
             android:textColor="#7f7f7f"
-            android:background="@drawable/select_btn"/>
+            android:background="@xml/short_btn_select"/>
         <Button
+            android:id="@+id/btnInter_books"
             android:layout_width="103dp"
             android:layout_height="42dp"
             android:text="독서"
@@ -71,47 +75,51 @@
             android:textStyle="bold"
             android:textSize="13.8sp"
             android:textColor="#7f7f7f"
-            android:background="@drawable/select_btn"/>
+            android:background="@xml/short_btn_select"/>
         <Button
+            android:id="@+id/btnInter_mbti"
             android:layout_width="103dp"
             android:layout_height="42dp"
             android:text="MBTI"
-            android:textStyle="bold"
             android:textSize="13.8sp"
             android:textColor="#7f7f7f"
-            android:background="@drawable/select_btn"/>
+            android:background="@xml/short_btn_select"/>
         <Button
+            android:id="@+id/btnInter_tech"
             android:layout_width="103dp"
             android:layout_height="42dp"
             android:text="테크"
             android:textStyle="bold"
             android:textSize="13.8sp"
             android:textColor="#7f7f7f"
-            android:background="@drawable/select_btn"/>
+            android:background="@xml/short_btn_select"/>
         <Button
+            android:id="@+id/btnInter_marketing"
             android:layout_width="103dp"
             android:layout_height="42dp"
             android:text="마케팅"
             android:textStyle="bold"
             android:textSize="13.8sp"
             android:textColor="#7f7f7f"
-            android:background="@drawable/select_btn"/>
+            android:background="@xml/short_btn_select"/>
         <Button
+            android:id="@+id/btnInter_design"
             android:layout_width="103dp"
             android:layout_height="42dp"
             android:text="디자인"
             android:textStyle="bold"
             android:textSize="13.8sp"
             android:textColor="#7f7f7f"
-            android:background="@drawable/select_btn"/>
+            android:background="@xml/short_btn_select"/>
         <Button
+            android:id="@+id/btnInter_career"
             android:layout_width="103dp"
             android:layout_height="42dp"
             android:text="커리어"
             android:textStyle="bold"
             android:textSize="13.8sp"
             android:textColor="#7f7f7f"
-            android:background="@drawable/select_btn"/>
+            android:background="@xml/short_btn_select"/>
     </GridLayout>
 
     <TextView
@@ -123,7 +131,7 @@
         android:lineSpacingExtra="1.5sp"
         android:layout_marginTop="68dp"
         android:fontFamily="@font/kopubdotumbold"
-        tools:text="상대방의 성별을 선택하세요." />
+        android:text="상대방의 성별을 선택하세요." />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -131,6 +139,7 @@
         android:orientation="horizontal"
         android:layout_marginTop="19dp">
         <Button
+            android:id="@+id/btnSex_f"
             android:layout_width="157dp"
             android:layout_height="42dp"
             android:text="여성"
@@ -138,18 +147,20 @@
             android:textSize="13.8sp"
             android:textColor="#7f7f7f"
             android:layout_marginRight="9.5dp"
-            android:background="@drawable/select_long_btn"/>
+            android:background="@xml/long_btn_select"/>
         <Button
+            android:id="@+id/btnSex_m"
             android:layout_width="157dp"
             android:layout_height="42dp"
             android:text="남성"
             android:textStyle="bold"
             android:textSize="13.8sp"
             android:textColor="#7f7f7f"
-            android:background="@drawable/select_long_btn"/>
+            android:background="@xml/long_btn_select" />
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnNext"
         android:layout_width="match_parent"
         android:layout_height="49.5dp"
         android:text="다음"
