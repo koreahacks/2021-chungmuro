@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/drawerView">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="163.8dp"
+            android:background="#9abddf"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+
+        <!--로고-->
+        <ImageView
+            android:layout_width="47.5dp"
+            android:layout_height="47.5dp"
+            android:src="@drawable/logo"
+            android:id="@+id/profile_logo"
+            android:layout_marginTop="38.5dp"
+            android:layout_marginLeft="15.5dp">
+        </ImageView>
+
+            <!--닉네임-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이아람 님"
+            android:textSize="18.8dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/bmdohyeon"
+            android:layout_marginTop="109.5dp"
+            android:layout_marginLeft="15.5dp"
+            >
+        </TextView>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="20.9dp"
+            android:layout_height="19.1dp"
+            android:src="@drawable/interest"
+            android:layout_marginTop="208.8dp"
+            android:layout_marginLeft="15.2dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관심분야 변경"
+            android:textColor="#99000000"
+            android:textSize="14sp"
+            android:id="@+id/change_interest"
+            android:layout_marginTop="210.5dp"
+            android:layout_marginLeft="67.8dp"
+            android:fontFamily="@font/kopubdotummedium">
+        </TextView>
+
+
+        <ImageView
+            android:layout_width="19.3dp"
+            android:layout_height="19.3dp"
+            android:src="@drawable/logout"
+            android:layout_marginTop="258.5dp"
+            android:layout_marginLeft="17dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:textSize="14sp"
+            android:textColor="#99000000"
+            android:id="@+id/logout"
+            android:layout_marginTop="260.8dp"
+            android:layout_marginLeft="67.8dp">
+        </TextView>
+
+
+        <ImageView
+            android:layout_width="19.3dp"
+            android:layout_height="20.4dp"
+            android:src="@drawable/signout"
+            android:layout_marginTop="307.7dp"
+            android:layout_marginLeft="17.5dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원 탈퇴"
+            android:textColor="#99000000"
+            android:textSize="14sp"
+            android:id="@+id/signout"
+            android:layout_marginTop="311dp"
+            android:layout_marginLeft="67.8dp">
+       </TextView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
