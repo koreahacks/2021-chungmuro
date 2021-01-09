@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="102.3dp"
+        android:layout_height="89.4dp"
+        android:layout_marginStart="128.8dp"
+        android:layout_marginLeft="128.8dp"
+        android:layout_marginTop="169.8dp"
+        android:background="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="342.5dp"
+        android:background="@drawable/editbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kopubdotummedium"
+        android:background="@null"
+        android:hint="ID"
+        android:textColor="#b4b4b4"
+        android:textSize="13.8sp"
+        android:layout_marginStart="34.5dp"
+        android:layout_marginLeft="34.5dp"
+        android:layout_marginTop="359.8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="408dp"
+        android:background="@drawable/editbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:fontFamily="@font/kopubdotummedium"
+        android:hint="PWD"
+        android:textColor="#b4b4b4"
+        android:textSize="13.8sp"
+        android:layout_marginStart="34.5dp"
+        android:layout_marginLeft="34.5dp"
+        android:layout_marginTop="425.3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/loginBtn"
+        android:layout_width="328dp"
+        android:layout_height="49.5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="512.5dp"
+        android:background="@drawable/loginbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="112.8dp"
+        android:layout_height="16.8dp"
+        android:text="계정이 없으신가요?"
+        android:fontFamily="@font/kopubdotummedium"
+        android:textColor="#5c5c5c"
+        android:textSize="13.8sp"
+        android:layout_marginStart="94.3dp"
+        android:layout_marginLeft="94.3dp"
+        android:layout_marginTop="585.8dp"
+        android:lineSpacingExtra="1.5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="50.3dp"
+        android:layout_height="16.8dp"
+        android:text="회원가입"
+        android:fontFamily="@font/kopubdotumbold"
+        android:textStyle="bold"
+        android:textColor="#8fabb8"
+        android:textSize="13.8sp"
+        android:layout_marginStart="215.8dp"
+        android:layout_marginLeft="215.8dp"
+        android:layout_marginTop="585.8dp"
+        android:lineSpacingExtra="1.5sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
