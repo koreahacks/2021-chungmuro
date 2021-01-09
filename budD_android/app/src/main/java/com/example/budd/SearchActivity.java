@@ -1,12 +1,10 @@
 package com.example.budd;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.Application;
-import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -30,15 +28,19 @@ public class SearchActivity extends AppCompatActivity {
     ArrayList<Diary> d_items;
     String userid;
     String opposite_id;
+    SearchResultAdapter adapter;
+    RecyclerView recyclerView;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-
-        final SearchResultAdapter adapter = new SearchResultAdapter(getApplicationContext());
-
+        recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(recyclerView.getContext()));
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+//        recyclerView.setLayoutManager(layoutManager);
+        adapter = new SearchResultAdapter(getApplicationContext());
         adapter.setOnItemClickListener(new SearchResultAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(SearchResultAdapter.ViewHolder holder, View view, int position) {
@@ -46,6 +48,7 @@ public class SearchActivity extends AppCompatActivity {
                 //다이어리 화면으로 넘어가기//intend~
             }
         });
+        recyclerView.setAdapter(adapter);
     }
 
 
@@ -63,8 +66,23 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 Toast.makeText(getApplicationContext(),"검색을 완료했습니다.",Toast.LENGTH_SHORT).show();
+//                int no,String title, String userid,String diary_type,String opposite_id,
+//                        String cover_filePath,String content_filePath,String write_time
+                adapter.addItem(new Diary(0,"apple","kyz","send",
+                        "shw","asdf","asdf","2021-01-09"));
+                adapter.addItem(new Diary(1,"banana","kyz","receive",
+                        "shw","asdf","asdf","2021-01-09"));
+                adapter.addItem(new Diary(2,"tomato","kyz","receive",
+                        "shw","asdf","asdf","2021-01-09"));
+                adapter.addItem(new Diary(3,"pineapple","kyz","send",
+                        "shw","asdf","asdf","2021-01-10"));
+                adapter.addItem(new Diary(4,"grape","kyz","send",
+                        "shw","asdf","asdf","2021-01-10"));
+
+
+                //서버가 돌아갈 때 사용
                 //String userid, String opposite_id, String title
-                http_api_cmd("/findTitle", find_title_cmd_msg(userid,opposite_id,query));
+                //http_api_cmd("/findTitle", find_title_cmd_msg(userid,opposite_id,query));
                 //list 받아와서 adapter.addItem으로 추가
                 return false;
             }

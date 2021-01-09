@@ -16,6 +16,7 @@ public class Diary {
     public Diary(int no,String title, String userid,String diary_type,String opposite_id,
                  String cover_filePath,String content_filePath,String write_time){
 
+        this.no = no;
         this.title = title;
         this.userid = userid;
         this.date = write_time.substring(0,10);
