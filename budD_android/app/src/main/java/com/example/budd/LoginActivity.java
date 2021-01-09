@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (editUserid.getText().toString().equals(userID) && editUserpw.getText().toString().equals(userPWD)) {
-                    Intent intent = new Intent(getApplicationContext(), NewPage_selectInter.class);
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent); //액티비티 띄우기
                 } else
                     Toast.makeText(getApplicationContext(), "아이디나 패스워드가 틀립니다.", Toast.LENGTH_SHORT).show();
