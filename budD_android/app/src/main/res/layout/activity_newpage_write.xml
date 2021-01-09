@@ -18,8 +18,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="25dp">
-            <EditText
 
+            <EditText
                 android:layout_width="240dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bmdohyeon"
@@ -36,7 +36,7 @@
                 android:letterSpacing="0.01"
                 android:lineSpacingExtra="1.5sp"
                 android:layout_gravity="right"
-                tools:text="2021-01-01" />
+                android:text="2021-01-01" />
 
             <EditText
                 android:layout_marginTop="12dp"
@@ -82,7 +82,7 @@
                 android:textColor="#8fabb8"
                 android:letterSpacing="0.01"
                 android:lineSpacingExtra="1.5sp"
-                tools:text="From." />
+                android:text="From." />
 
             <TextView
                 android:layout_marginTop="5dp"
@@ -95,7 +95,7 @@
                 android:textColor="#7f7f7f"
                 android:letterSpacing="0.01"
                 android:lineSpacingExtra="1.5sp"
-                tools:text="닉네임" />
+                android:text="닉네임" />
 
 
 
