@@ -74,7 +74,7 @@ public class SearchResultAdapter extends RecyclerView.Adapter<SearchResultAdapte
         }
 
         public void setItem(Diary item){
-            txt_username.setText(item.userid);
+            txt_username.setText("From. "+item.writer);
             txt_date.setText(item.date);
             txt_title.setText(item.title);
         }

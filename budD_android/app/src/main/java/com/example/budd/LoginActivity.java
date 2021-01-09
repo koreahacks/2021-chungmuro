@@ -7,12 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
     ImageButton login;
-    TextView register;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,13 +22,11 @@ public class LoginActivity extends AppCompatActivity {
         actionBar.hide();
 
         login = (ImageButton) findViewById(R.id.loginBtn);
-        register = (TextView) findViewById(R.id.register);
 
-        register.setOnClickListener(new View.OnClickListener() {
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent = new Intent(getApplicationContext(), RegisterActivity.class);
+                Intent intent = new Intent(LoginActivity.this, SearchActivity.class);
                 startActivity(intent);
 
             }
@@ -42,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
-
+                finish();
             }
         });
     }
